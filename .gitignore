@@ -3,5 +3,3 @@ node_modules
 config.json
 rank.json
 ressources
-package-lock.json
-package.json
