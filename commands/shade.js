@@ -26,7 +26,7 @@ module.exports = {
         // reply tier rank in an embed message
         const embed = new EmbedBuilder()
         .setTitle('Shade est actuellement classé :')
-        .setURL('https://overwatch.blizzard.com/fr-fr/career/Vrexio-2570/')
+        .setURL('https://overwatch.blizzard.com/fr-fr/career/Shadeerilaz-2444/')
         .setFields(
             // { name:'Tank', value: `${tankRank}`, inline:true},
             // {name:"DPS", value:`${dpsRank}`, inline:true},
