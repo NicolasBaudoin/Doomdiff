@@ -8,7 +8,7 @@ const gamerTags = require("./gamerTags.json")
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName(`Rank-overwatch`)
+		.setName(`username`)
 		.setDescription(`Donne les rangs de l'utilisateur ajouté sur Overwatch`),
 	async execute(interaction) {
 		// Récupérer le nom d'utilisateur fourni par l'utilisateur dans la commande.
