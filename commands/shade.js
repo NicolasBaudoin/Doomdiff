@@ -15,11 +15,11 @@ module.exports = {
         //set a RegEx that extract only the tier name of the rank in the url of icon rank
         const regex = /(?<=\/)[a-zA-Z]+-\d+(?=-[a-zA-Z0-9]*\.png)/;
         // Extract the image URLs of the ranks
-        // const tankUrl = $('img.Profile-playerSummary--rank')[0].attribs.src;
+        const tankUrl = $('img.Profile-playerSummary--rank')[0].attribs.src;
         // const dpsUrl = $('img.Profile-playerSummary--rank')[1].attribs.src;
-        const suppUrl = $('img.Profile-playerSummary--rank')[2].attribs.src;
+        const suppUrl = $('img.Profile-playerSummary--rank')[1].attribs.src;
         //Use Regex on urls
-        // const tankRank = tankUrl.match(regex)[0];
+        const tankRank = tankUrl.match(regex)[0];
         // const dpsRank = dpsUrl.match(regex)[0];
         const suppRank = suppUrl.match(regex)[0];
         
@@ -28,7 +28,7 @@ module.exports = {
         .setTitle('Shade est actuellement classé :')
         .setURL('https://overwatch.blizzard.com/fr-fr/career/Shadeerilaz-2444/')
         .setFields(
-            // { name:'Tank', value: `${tankRank}`, inline:true},
+            { name:'Tank', value: `${tankRank}`, inline:true},
             // {name:"DPS", value:`${dpsRank}`, inline:true},
             {name:"Support", value:`${suppRank}`, inline:true}
             )
